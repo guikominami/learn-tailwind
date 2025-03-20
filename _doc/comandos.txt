@@ -1,0 +1,40 @@
+liberar execucao de scripts. Abrir o power shell em modo admin:
+Set-ExecutionPolicy Unrestricted
+
+install npm:
+npm install -g npm
+
+npm install 
+
+create vite project:
+npm create vite@latest
+
+npm run dev
+
+checar versões:
+npm view react version
+node -v
+
+---------------------------------
+TypeScript
+---------------------------------
+install:
+npm i -g typescript ts-node
+
+compile the file:
+tsc index.ts
+
+execute the file:
+node index.js
+
+execute the 2 commands in one:
+ts-node index.ts 
+
+---------------------------------
+GIT
+---------------------------------
+git push -u origin main
+
+ignore changes and pull
+git reset --hard origin/main  
+git pull
