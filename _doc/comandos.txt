@@ -30,6 +30,10 @@ node index.js
 execute the 2 commands in one:
 ts-node index.ts 
 
+
+Examples:
+const NavbarList: React.FC<{ isNavBarOpen: boolean }> = ({ isNavBarOpen }) => {
+
 ---------------------------------
 GIT
 ---------------------------------

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import logo from '../../assets/icons/logoColor.png';
-import NavbarList from './NavbarList';
+import NavbarList from './NavbarItems';
 
 const NavbarResponsible: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);

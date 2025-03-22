@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/icons/logoBlack.png';
-import NavbarList from './NavbarList';
+import NavbarItems from './NavbarItems';
 import { Link } from 'react-router';
 
 const Navbar: React.FC = () => {
@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
           alt='logo com descrição MudaLab / logo with description MudaLab'
         />
       </Link>
-      <NavbarList />
+      <NavbarItems />
     </div>
   );
 };
