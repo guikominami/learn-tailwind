@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import NavbarSubMenu from './NavbarSubMenu';
+import { menuText } from '../../assets/data/dataLanguagePt';
 
 const NavbarItems: React.FC = () => {
   return (
-    <div className='flex gap-4 mr-6 font-medium'>
+    <div className='flex gap-4 mr-3 font-medium'>
       <div className=''>
         <Link
           className='text-black/60 focus:outline-none data-[active]:text-black data-[focus]:text-black data-[hover]:text-black'
@@ -12,20 +13,9 @@ const NavbarItems: React.FC = () => {
           Home
         </Link>
       </div>
-      <NavbarSubMenu
-        menuItem='Projetos'
-        menuSubItems={[
-          { title: 'laboratórios', url: '/laboratorios' },
-          { title: 'materiais pedagógicos', url: '/mpa' },
-        ]}
-      />
-      <NavbarSubMenu
-        menuItem='Sobre nós'
-        menuSubItems={[
-          { title: 'metodologia', url: '/methodology' },
-          { title: 'equipe', url: '/team' },
-        ]}
-      />
+      {menuText.map((item) => (
+        <NavbarSubMenu menu={item} />
+      ))}
     </div>
   );
 };

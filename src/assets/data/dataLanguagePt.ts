@@ -1,3 +1,55 @@
+export const menuText: {
+  title: string;
+  subMenuItems: { title: string; url: string }[];
+}[] = [
+  {
+    title: 'projetos',
+    subMenuItems: [
+      {
+        title: 'Laboratórios',
+        url: '/labs',
+      },
+      {
+        title: 'Materiais Pedagógicos',
+        url: '/education',
+      },
+      {
+        title: 'Programação e Robótica',
+        url: '/programming',
+      },
+      {
+        title: 'Sustentabilidade',
+        url: '/eco',
+      },
+      {
+        title: 'Tutoriais de Tecnologia',
+        url: '/tutorials',
+      },
+    ],
+  },
+  {
+    title: 'sobre nós',
+    subMenuItems: [
+      {
+        title: 'Metodologia',
+        url: '/Methodology',
+      },
+      {
+        title: 'Equipe',
+        url: '/team',
+      },
+      {
+        title: 'Notícias',
+        url: '/news',
+      },
+      {
+        title: 'Parceiros',
+        url: '/partners',
+      },
+    ],
+  },
+];
+
 export const homeText: {
   carousel: string;
   title: string;
