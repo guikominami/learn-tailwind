@@ -1,13 +1,12 @@
 import React from 'react';
 import Container from '../components/Container';
 import Box from '../components/Box';
-import image from '/images/labtec/lab0.jpg';
 import Carousel from '../components/Carousel/Carousel';
 
 const Home: React.FC = () => {
   const images = [
     { image: 'image1', text: 'text1' },
-    { image: 'image1', text: 'text1' },
+    { image: 'image2', text: 'text2' },
   ];
 
   return (
@@ -22,9 +21,7 @@ const Home: React.FC = () => {
               merda é essa? Que merda é essa? Que merda é essa?
             </p>
           </Box>
-          <Carousel carouselImages={images}>
-            <img src={image} alt='' />
-          </Carousel>
+          <Carousel carouselImages={images} />
           <Box>
             <p>teste</p>
           </Box>
