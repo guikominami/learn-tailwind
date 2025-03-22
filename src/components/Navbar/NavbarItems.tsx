@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import NavbarSubMenu from './NavbarSubMenu';
-import { menuText } from '../../assets/data/dataLanguagePt';
+import { menuText } from '../../assets/data/languageDataPt';
 
 const NavbarItems: React.FC = () => {
   return (
-    <div className='flex gap-4 mr-3 font-medium'>
+    <div className='flex gap-4 mr-3'>
       <div className=''>
         <Link
           className='text-black/60 focus:outline-none data-[active]:text-black data-[focus]:text-black data-[hover]:text-black'
