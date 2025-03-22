@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import NavbarSubMenu from './NavbarSubMenu';
-import { menuText } from '../../assets/data/languageDataPt';
+import { menuText } from '../../assets/data/language/menu';
 
 const NavbarItems: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const NavbarItems: React.FC = () => {
           Home
         </Link>
       </div>
-      {menuText.map((item) => (
+      {menuText['portuguese'].map((item) => (
         <NavbarSubMenu menu={item} />
       ))}
     </div>
