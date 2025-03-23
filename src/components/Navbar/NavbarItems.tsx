@@ -7,14 +7,15 @@ const NavbarItems: React.FC = () => {
     <div className='flex gap-4 mr-3'>
       <div className=''>
         <Link
-          className='text-black/60 focus:outline-none data-[active]:text-black data-[focus]:text-black data-[hover]:text-black'
+          className='text-black/60 focus:outline-none
+                  data-[active]:text-black data-[focus]:text-black data-[hover]:text-black'
           to='/'
         >
           Home
         </Link>
       </div>
-      {menuText['portuguese'].map((item) => (
-        <NavbarSubMenu menu={item} />
+      {menuText['portuguese'].map((item, index) => (
+        <NavbarSubMenu menu={item} key={index} />
       ))}
     </div>
   );

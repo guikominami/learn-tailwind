@@ -1,7 +1,9 @@
-export const lab: {
+interface Images {
   image: string;
   text: string;
-}[] = [
+}
+
+export const lab: Images[] = [
   {
     image: '/images/labtec/lab0.jpg',
     text: 'Desenho da solução que será construida com uso de energia solar e automação.',

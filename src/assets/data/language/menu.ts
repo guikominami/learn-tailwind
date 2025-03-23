@@ -13,7 +13,7 @@ export const menuText: {
       subMenuItems: [
         {
           title: 'Laboratórios',
-          url: '/labs',
+          url: '/lab',
         },
         {
           title: 'Materiais Pedagógicos',
@@ -82,7 +82,7 @@ export const menuText: {
       subMenuItems: [
         {
           title: 'Laboratories',
-          url: '/labs',
+          url: '/lab',
         },
         {
           title: 'PEDAGOGICAL MATERIALS',
