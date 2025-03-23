@@ -8,28 +8,20 @@ import { LanguageContext } from '../context/language.context';
 import { labText } from '../assets/data/language/lab.ts';
 
 const Lab: React.FC = () => {
-  const images = {
-    '1': {
-      image: 'image1',
-      text: 'text1',
-    },
-    '2': {
-      image: 'image2',
-      text: 'text2',
-    },
-  };
-
   const { language } = useContext(LanguageContext);
+  const selectedLanguage = language === 'portuguese' ? 'portuguese' : 'english';
 
-  console.log(labText[language]);
+  console.log(labText[selectedLanguage]);
 
   return (
     <>
       <Container>
         <>
           <Box>
-            <h1 className='text-3xl font-bold'>{images['1']['image']}</h1>
-            <p className='mt-4'></p>
+            <h1 className='text-3xl font-bold'>
+              {labText[selectedLanguage].title}
+            </h1>
+            <p className='mt-4'>{labText[selectedLanguage].body1}</p>
           </Box>
           {/* <Box>
             <Carousel carouselImages={images} />

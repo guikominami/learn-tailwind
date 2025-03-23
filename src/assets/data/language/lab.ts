@@ -1,10 +1,16 @@
-interface Lab {
+interface TextPage {
   title: string;
   body1: string;
   body2: string;
 }
 
-export const labText: { portuguese: Lab; english: Lab } = {
+interface Language {
+  portuguese: TextPage;
+  english: TextPage;
+}
+
+// export const labText: { portuguese: Lab; english: Lab } = {
+export const labText: Language = {
   portuguese: {
     title: 'Laboratórios de Tecnologias Cidadãs',
     body1:
